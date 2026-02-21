@@ -117,13 +117,13 @@ section{
     font-size: 3.2rem;
     font-weight: 700;
     color: transparent;
-    -webkit-text-stroke: .7px #ff00ee;
-    background: linear-gradient(#ff00ee,#ff00ee);
+    -webkit-text-stroke: .7px #dbbfd9;
+    background: linear-gradient(rgba(255,0,238,0.7),rgba(255,0,238,0.7));
     background-repeat: no-repeat;
     background-position: -33rem 0;
     transform: translateY(-100px);
     opacity: 0;
-    animation: textSlide 6s linear infinite,
+    animation: textSlide 5s linear infinite,
     TopSlide 1s ease forwards;
     animation-delay: 2s,1.2s;
 }
@@ -142,7 +142,7 @@ section{
     top: 0;
     height: 100%;
     width: 0;
-    border-right: 2px solid #ff00ee;
+    border-right: 2px transparent #ff00ee;
     transform: translateY(-100px);
     opacity: 0;
     animation: CursorSlide 6s linear infinite,
@@ -245,6 +245,10 @@ section{
 }
 .social-media {
     margin: 2rem 0;
+}
+.social-media a{
+    display: inline-block;
+    text-decoration: none;
 }
 .social-media i{
     display: inline-block;
