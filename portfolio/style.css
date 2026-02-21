@@ -598,7 +598,7 @@ input:nth-child(1){
 }
 section.start-animation input:nth-child(1){
     animation:Right 1s ease forwards;
-    animation-delay: 1.2s;
+    animation-delay: 0.3s;
 }
 input:nth-child(2){
     opacity: 0;
@@ -606,7 +606,7 @@ input:nth-child(2){
 }
 section.start-animation input:nth-child(2){
     animation:Left 1s ease forwards;
-    animation-delay: 1.2s;
+    animation-delay: 0.3s;
 }
  input,textarea{
     width: 100%;
@@ -625,7 +625,7 @@ section.start-animation input:nth-child(2){
 }
 section.start-animation textarea{
     animation:Bottom 1s ease forwards;
-    animation-delay: 1.2s;
+    animation-delay: 0.4s;
 }
 input::placeholder{
     font-size: 1.5rem;
@@ -653,7 +653,7 @@ textarea{
 }
 section.start-animation .btn{
     animation:Bottom 1s ease forwards;
-    animation-delay: 1.4s;
+    animation-delay: 0.3s;
 }
 .contact .btn:hover{
     background: #ff00ee;
