@@ -79,3 +79,25 @@ if (readMoreBtn) {
         }, 1800); // Wait for the first scroll to complete + some buffer time
     });
 }
+
+// Project filters and expandable card details
+const filterButtons = document.querySelectorAll('.filter-btn');
+const projectCards = document.querySelectorAll('.project-card');
+const detailButtons = document.querySelectorAll('.details-btn');
+
+filterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        filterButtons.forEach(filter => filter.classList.remove('active'));
+        button.classList.add('active');
+        const filter = button.dataset.filter;
+        projectCards.forEach(card => card.classList.toggle('is-hidden', filter !== 'all' && card.dataset.category !== filter));
+    });
+});
+
+detailButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        const card = button.closest('.project-card');
+        const expanded = card.classList.toggle('expanded');
+        button.innerHTML = expanded ? "Close <i class='bx bx-minus'></i>" : "Details <i class='bx bx-plus'></i>";
+    });
+});
